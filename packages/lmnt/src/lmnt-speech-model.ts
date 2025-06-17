@@ -104,7 +104,7 @@ export class LMNTSpeechModel implements SpeechModelV1 {
     private readonly config: LMNTSpeechModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     text,
     voice = 'ava',
     outputFormat = 'mp3',

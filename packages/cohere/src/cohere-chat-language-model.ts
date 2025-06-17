@@ -52,7 +52,7 @@ export class CohereChatLanguageModel implements LanguageModelV1 {
     return this.config.provider;
   }
 
-  private getArgs({
+  protected getArgs({
     mode,
     prompt,
     maxTokens,

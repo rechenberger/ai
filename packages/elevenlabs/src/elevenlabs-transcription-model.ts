@@ -51,7 +51,7 @@ export class ElevenLabsTranscriptionModel implements TranscriptionModelV1 {
     private readonly config: ElevenLabsTranscriptionModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     audio,
     mediaType,
     providerOptions,

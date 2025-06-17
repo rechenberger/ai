@@ -75,7 +75,7 @@ export class DeepgramTranscriptionModel implements TranscriptionModelV1 {
     private readonly config: DeepgramTranscriptionModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     providerOptions,
   }: Parameters<TranscriptionModelV1['doGenerate']>[0]) {
     const warnings: TranscriptionModelV1CallWarning[] = [];

@@ -62,7 +62,7 @@ export class GroqChatLanguageModel implements LanguageModelV1 {
     return !this.settings.downloadImages;
   }
 
-  private getArgs({
+  protected getArgs({
     mode,
     prompt,
     maxTokens,

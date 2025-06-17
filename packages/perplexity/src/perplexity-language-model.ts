@@ -45,7 +45,7 @@ export class PerplexityLanguageModel implements LanguageModelV1 {
     this.config = config;
   }
 
-  private getArgs({
+  protected getArgs({
     mode,
     prompt,
     maxTokens,

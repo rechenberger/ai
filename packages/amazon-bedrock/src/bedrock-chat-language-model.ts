@@ -53,7 +53,7 @@ export class BedrockChatLanguageModel implements LanguageModelV1 {
     private readonly config: BedrockChatConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     mode,
     prompt,
     maxTokens,

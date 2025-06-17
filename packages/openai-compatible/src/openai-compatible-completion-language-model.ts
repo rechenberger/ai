@@ -77,7 +77,7 @@ export class OpenAICompatibleCompletionLanguageModel
     return this.config.provider.split('.')[0].trim();
   }
 
-  private getArgs({
+  protected getArgs({
     mode,
     inputFormat,
     prompt,

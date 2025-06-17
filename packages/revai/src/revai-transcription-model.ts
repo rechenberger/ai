@@ -231,7 +231,7 @@ export class RevaiTranscriptionModel implements TranscriptionModelV1 {
     private readonly config: RevaiTranscriptionModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     audio,
     mediaType,
     providerOptions,

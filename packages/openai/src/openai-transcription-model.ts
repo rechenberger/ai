@@ -118,7 +118,7 @@ export class OpenAITranscriptionModel implements TranscriptionModelV1 {
     private readonly config: OpenAITranscriptionModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     audio,
     mediaType,
     providerOptions,

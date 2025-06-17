@@ -39,7 +39,7 @@ export class OpenAIResponsesLanguageModel implements LanguageModelV1 {
     return this.config.provider;
   }
 
-  private getArgs({
+  protected getArgs({
     mode,
     maxTokens,
     temperature,

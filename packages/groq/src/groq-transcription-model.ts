@@ -46,7 +46,7 @@ export class GroqTranscriptionModel implements TranscriptionModelV1 {
     private readonly config: GroqTranscriptionModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     audio,
     mediaType,
     providerOptions,

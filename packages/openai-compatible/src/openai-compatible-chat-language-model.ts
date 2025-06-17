@@ -101,7 +101,7 @@ export class OpenAICompatibleChatLanguageModel implements LanguageModelV1 {
     return this.config.provider.split('.')[0].trim();
   }
 
-  private getArgs({
+  protected getArgs({
     mode,
     prompt,
     maxTokens,

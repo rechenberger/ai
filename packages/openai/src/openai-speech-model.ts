@@ -39,7 +39,7 @@ export class OpenAISpeechModel implements SpeechModelV1 {
     private readonly config: OpenAISpeechModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     text,
     voice = 'alloy',
     outputFormat = 'mp3',

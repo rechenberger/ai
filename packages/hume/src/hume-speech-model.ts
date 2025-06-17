@@ -102,7 +102,7 @@ export class HumeSpeechModel implements SpeechModelV1 {
     private readonly config: HumeSpeechModelConfig,
   ) {}
 
-  private getArgs({
+  protected getArgs({
     text,
     voice = 'd8ab67c6-953d-4bd8-9370-8fa53a0f1453',
     outputFormat = 'mp3',
